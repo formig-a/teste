@@ -1,0 +1,92 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+ul a {
+	text-decoration: none;
+	color: black;
+}
+
+body{
+	font-family: arial;
+}
+
+ul{
+	list-style: none;
+	background: grey;
+}
+
+#menu{
+	width: 40px;
+	list-style: none;
+}
+
+input[type=checkbox]
+{
+	display: none;
+}
+
+nav{
+	background: rgba(16, 16, 16, .5);
+	width: 350px;
+	left: -350px;
+	position: absolute;
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+	transform: translateX(350px);
+}
+
+ul{
+	top: 70px;
+	position: absolute;
+	width: 100%;
+}
+
+ul a{
+	display: block;
+	padding: 20px 5px;
+	color: black;
+	text-decoration: none;
+}
+
+ul a:hover{
+	background-color: darkgrey;
+	color: black;
+	text-decoration: none;
+}
+
+label{
+	padding: 15px;
+	position: absolute;
+	z-index: 1;
+}
+
+h1{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.cabe_centro {
+	display: flex;
+	text-decoration: none;
+}
+
+#titulo {
+	margin-left: 25px;
+	text-decoration: none;
+}
+
+#whatsapp {
+	width: 40px;
+	margin-left: 550px;
+	margin-top: 20px;
+}
+
+#carrinho {
+	width: 40px;
+	margin-left: 550px;
+	margin-top: 20px;
+}

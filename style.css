@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    color: black;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, serif;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 40px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+nav {
+    background-color: rgb(16,16,16,.5);
+    width: 350px;
+    height: auto;
+    left: -350px;
+    position: absolute;
+    transition: all .5s;
+}
+
+input[type="checkbox"]:checked ~ nav {
+    transform: translateX(350px);
+}
+
+ul{
+    background-color: grey;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+}
+
+a {
+    display: block;
+    padding: 20px 5px;
+    color: black;
+    text-decoration: none;
+}
+
+ul a:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+label {
+    padding: 25px;
+    position: absolute;
+    z-index: 1;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.whatsapp {
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    margin-top: 25px;
+}
+
+.sessao_prod{
+    width: 70%;
+    margin: auto;
+    font-family: arial;
+}
+.prod_div{
+    width: 15%;
+    float: left;
+    padding: 1%;
+    background-color: grey;
+    margin: 10px;
+}
+.imagem_prod{
+    width: 100%;
+    height: 150px;
+}
+
+.preco{
+    font-size: 12pt;
+    color: black;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    padding: 10px 0px;
+    font-weight: normal;
+}
+p{
+    font-size: 10pt;
+}
+
+a:hover {
+    color: lightgrey;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.modal {
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.fechar {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
